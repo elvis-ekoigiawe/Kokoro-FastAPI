@@ -63,4 +63,4 @@ RUN if [ "$DOWNLOAD_MODEL" = "true" ]; then \
 
 ENV DEVICE="cpu"
 # Run FastAPI server through entrypoint.sh
-CMD ["./entrypoint.sh"]
+CMD ["./entrypoint.sh", "--port", "7860"]
